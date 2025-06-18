@@ -21,10 +21,8 @@ jobs:
       - name: Instalar Dependencias
         run: |
           python -m venv venv
-          source venv/bin/activate
           pip install -r requirements.txt
       
       - name: Ejecutar Tests
         run: |
-           source venv/bin/activate
            pytest
